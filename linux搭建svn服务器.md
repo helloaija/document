@@ -18,9 +18,9 @@ mod_dav_svn.so
 \> svnadmin create /usr/local/svn/repositories
 
 #### 4、修改svn配置
-\> cd /opt/svn/repositories/conf  
+\> cd /usr/local/svn/repositories/conf  
 \#添加用户密码shitl = 123456  
-\> vi /opt/usr/local/repositories/conf/passwd  
+\> vi /usr/local/repositories/conf/passwd  
 
 ```
 [users]
@@ -30,7 +30,7 @@ shitl = 123456
 shitl = hl1234
 ```
 \#用户权限，追加repository库的根目录权限  
-\> vi /opt/svn/repositories/conf/passwd  
+\> vi /usr/local/svn/repositories/conf/passwd  
 ```
 [/]
 zhoulf=rw  //给该用户访问所有库的权限
@@ -54,7 +54,7 @@ password-db=passwd
 #访问控制文件
 authz-db=authz
 #认证命名空间，subversion会在认证提示里显示，并且作为凭证缓存的关键字
-realm=/opt/svn/repositories
+realm=/usr/local/svn/repositories
 ```  
 
 #### 5、配置防火墙端口  
