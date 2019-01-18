@@ -27,7 +27,7 @@ basedir=/usr/local/mysql
 datadir=/usr/local/mysql/data  
 socket=/tmp/mysql.sock  
 log-error=/var/log/mysqld.log  
-pid-file=/var/run/mysqld/mysqld.pid  
+pid-file=/var/lib/mysqld/mysqld.pid  
 \#不区分大小写  
 lower_case_table_names = 1  
 sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION  
@@ -44,10 +44,10 @@ default-time_zone = '+8:00'
 
 #### 6、启动服务
 \> mkdir /var/run/mysqld  
-\> chmod 777 /var/run/mysqld  
+\> chmod 777 /var/lib/mysqld  
 \> vi /var/run/mysqld/mysqld.pid  
-\> chmod 777 /var/run/mysqld/mysqld.pid  
-\> chown mysql:mysql /var/run/mysqld/mysqld.pid  
+\> chmod 777 /var/lib/mysqld/mysqld.pid  
+\> chown mysql:mysql /var/lib/mysqld/mysqld.pid  
 \> /usr/local/mysql/support-files/mysql.server start  
 \#获取初始化密码  
 \> cat /var/log/mysqld.log
