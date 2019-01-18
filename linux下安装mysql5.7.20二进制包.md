@@ -46,7 +46,7 @@ default-time_zone = '+8:00'
 \> mkdir /var/run/mysqld  
 \> chmod 777 /var/run/mysqld  
 \> vi /var/run/mysqld/mysqld.pid  
-\> chmod 777 /usr/run/mysqld/mysqld.pid  
+\> chmod 777 /var/run/mysqld/mysqld.pid  
 \> chown mysql:mysql /var/run/mysqld/mysqld.pid  
 \> /usr/local/mysql/support-files/mysql.server start  
 \#获取初始化密码  
