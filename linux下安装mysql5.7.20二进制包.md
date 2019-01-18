@@ -43,9 +43,9 @@ default-time_zone = '+8:00'
 \> /usr/local/mysql/bin/mysqld --initialize --user=mysql --basedir=/usr/local/mysql --datadir=/usr/local/mysql/data --lc_messages_dir=/usr/local/mysql/share --lc_messages=en_US
 
 #### 6、启动服务
-\> mkdir /var/run/mysqld  
+\> mkdir /var/lib/mysqld  
 \> chmod 777 /var/lib/mysqld  
-\> vi /var/run/mysqld/mysqld.pid  
+\> vi /var/lib/mysqld/mysqld.pid  
 \> chmod 777 /var/lib/mysqld/mysqld.pid  
 \> chown mysql:mysql /var/lib/mysqld/mysqld.pid  
 \> /usr/local/mysql/support-files/mysql.server start  
