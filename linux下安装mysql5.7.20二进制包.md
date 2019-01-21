@@ -28,7 +28,7 @@ datadir=/usr/local/mysql/data
 socket=/tmp/mysql.sock  
 log-error=/var/log/mysqld.log  
 pid-file=/var/lib/mysqld/mysqld.pid  
-\#不区分大小写  
+#不区分大小写  
 lower_case_table_names = 1  
 sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION  
 max_connections=5000  
