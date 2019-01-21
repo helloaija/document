@@ -58,7 +58,7 @@ default-time_zone = '+8:00'
 #### 7、开机启动
 \> cp /usr/local/mysql/support-files/mysql.server /etc/init.d/mysqld  
 \#配置开机启动  
-\> chkconfig --add mysqld
+\> chkconfig --add mysqld  
 \#映射mysql命令  
 \> ln -s /usr/local/mysql/bin/mysql /usr/bin
 
