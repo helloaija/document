@@ -57,7 +57,7 @@ default-time_zone = '+8:00'
 
 #### 7、开机启动
 \> cp /usr/local/mysql/support-files/mysql.server /etc/init.d/mysqld  
-\#配置开机启动 
+\#配置开机启动  
 \> chkconfig --add mysqld
 \#映射mysql命令  
 \> ln -s /usr/local/mysql/bin/mysql /usr/bin
@@ -67,5 +67,5 @@ default-time_zone = '+8:00'
 
 #### 9、配置远程连接
 \> mysql -uroot -proot  
-\#执行以下命令允许远程用户名root密码root登录
+\#执行以下命令允许远程用户名root密码root登录  
 `GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root' WITH GRANT OPTION;`
