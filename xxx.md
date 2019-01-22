@@ -4,7 +4,7 @@
 
     Starting MySQL. ERROR! The server quit without updating PID file (/var/run/mysqld/mysqld.pid).
 
-查看日志发现如下错误
+查看日志发现如下错误  
 \> cat /var/log/mysqld.log
 
     [ERROR] /usr/local/mysql/bin/mysqld: Can't create/write to file '/var/run/mysqld/mysqld.pid' (Errcode: 2 - No such file or directory)
