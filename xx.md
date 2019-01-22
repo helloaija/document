@@ -1,0 +1,18 @@
+##### 1.启动数据库服务报错
+
+\> service mysqld start
+
+    Starting MySQL. ERROR! The server quit without updating PID file (/var/run/mysqld/mysqld.pid).
+
+查看日志发现如下错误
+\> cat /var/log/mysqld.log
+
+    [ERROR] /usr/local/mysql/bin/mysqld: Can't create/write to file '/var/run/mysqld/mysqld.pid' (Errcode: 2 - No such file or directory)
+    [ERROR] Can't start server: can't create PID file: No such file or directory  
+解决办法：创建/var/run/mysqld/mysqld.pid并授权
+\> mkdir /var/run/mysqld
+\> touch /var/run/mysqld/mysqld.pid
+\> chown -R mysql /var/run/mysqld
+\> chgrp -R mysql /var/run/mysqld
+
+最后注意下，每次启动系统的时候，/var/run下的文件都会被清空，建议mysqld.pid存放在其他目录，例如/var/lib/mysqld/mysqld.pid
