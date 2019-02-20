@@ -18,18 +18,18 @@
 \> tar zxvf nginx-1.15.8.tar.gz   
 \> cd nginx-1.15.8    
 \> ./configure --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module --with-pcre=/usr/local/src/pcre-8.42   
-\> make && make install
-\> /usr/local/nginx/sbin/nginx -v
+\> make && make install  
+\> /usr/local/nginx/sbin/nginx -v  
 
 
 #### 4、Nginx操作  
-#启动
-\> /usr/local/nginx/sbin/nginx
-#停止/重启
-\> /usr/local/nginx/sbin/nginx -s stop(quit、reload)
-#命令帮助
-\> /usr/local/nginx/sbin/nginx -h
-#验证配置文件
-\> /usr/local/nginx/sbin/nginx -t
-#配置文件
-\> vim /usr/local/nginx/conf/nginx.conf
+#启动  
+\> /usr/local/nginx/sbin/nginx  
+#停止/重启  
+\> /usr/local/nginx/sbin/nginx -s stop(quit、reload)  
+#命令帮助  
+\> /usr/local/nginx/sbin/nginx -h  
+#验证配置文件  
+\> /usr/local/nginx/sbin/nginx -t  
+#配置文件  
+\> vim /usr/local/nginx/conf/nginx.conf  
