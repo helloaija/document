@@ -50,7 +50,7 @@ default-time_zone = '+8:00'
 \> chown mysql:mysql /var/lib/mysqld/mysqld.pid  
 \> /usr/local/mysql/support-files/mysql.server start  
 \#获取初始化密码  
-\> cat /var/log/mysqld.log
+\> cat /var/log/mysqld.log  
 \> /usr/local/mysql/bin/mysql -uroot -p获取的密码  
 \#修改密码  
 \> set password = password('root')
