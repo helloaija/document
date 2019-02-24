@@ -17,7 +17,7 @@
 \> wget http://nginx.org/download/nginx-1.15.8.tar.gz  
 \> tar zxvf nginx-1.15.8.tar.gz   
 \> cd nginx-1.15.8    
-\> ./configure --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module --with-pcre=/usr/local/src/pcre-8.42   
+\> ./configure --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module --with-pcre=/usr/local/src/pcre-8.42 --with-http_gzip_static_module   
 \> make && make install  
 \> /usr/local/nginx/sbin/nginx -v  
 
