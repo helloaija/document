@@ -1,4 +1,4 @@
-#打jar包 
+#打jar包  
 cd /usr/local/qyj/qyj-store-1.0.0-SNAPSHOT  
 jar -cvfM0 /usr/local/qyj/qyj-store-1.0.0-SNAPSHOT.jar ./  
 
